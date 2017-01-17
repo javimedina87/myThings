@@ -6,7 +6,7 @@ $("#drop").droppable({ accept: ".draggable",
            drop: function(event, ui) 
 		   {
 				console.log("drop");
-			    $(this).removeClass("border").removeClass("over");
+			    $(this).removeClass("border").removeClass("overDue");
 				var dropped = ui.draggable;
 				var droppedOn = $(this);
 				myArray.push(dropped);
@@ -14,11 +14,11 @@ $("#drop").droppable({ accept: ".draggable",
 		   }, 
            over: function(event, elem) 
 		   {
-				$(this).addClass("over");
-				console.log("over");
+				$(this).addClass("overDue");
+				console.log("overDue");
            },
 		   out: function(event, elem) {
-				$(this).removeClass("over");
+				$(this).removeClass("overDue");
                 }
 		   });
 		   
@@ -27,7 +27,7 @@ $("#drop").sortable();
 
 $("#origin").droppable({ accept: ".draggable", drop: function(event, ui) {
 	console.log("drop");
-    $(this).removeClass("border").removeClass("over");
+    $(this).removeClass("border").removeClass("overDue");
 	var dropped = ui.draggable;
     var droppedOn = $(this);
 	var index = myArray.indexOf(dropped);
