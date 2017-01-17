@@ -4,22 +4,22 @@
   min-height: 200px;
 }
 
-#origin img, #drop img {
-  margin-top: 3px;
-  margin-left: 5px;
-}
-
 #drop
 {
   background-color: red;
   min-height: 200px;
 }
 
-.over {
+#origin img, #drop img {
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+.overDue {
   border: solid 5px yellow;
 }
 
 .draggable
 {
-  border: solid 5px #ffffff;
+  border: solid 5px white;
 }
