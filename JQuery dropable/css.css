@@ -1,0 +1,24 @@
+#origin
+{
+  background-color: orange;
+}
+
+#origin img, #drop img {
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+#drop
+{
+  background-color: red;
+  min-height: 120px;
+}
+
+.over {
+  border: solid 5px yellow;
+}
+
+.draggable
+{
+  border: solid 5px blue;
+}
